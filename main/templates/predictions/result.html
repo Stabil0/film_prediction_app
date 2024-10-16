@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Результат анализа отзыва</h1>
+
+    <p><strong>Ваш отзыв:</strong> {{ user_review }}</p>
+    <p><strong>Предсказанная оценка:</strong> {{ predicted_rating }}</p>
+    <p><strong>Категория отзыва:</strong> {{ review_category }}</p>
+
+    <a href="{% url 'predict_review' %}">Вернуться назад</a>
+</body>
+</html>
